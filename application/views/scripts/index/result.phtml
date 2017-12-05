@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-1">
+                <?php
+                echo " </br> <h4> Thank you  ".$this->email.". The result of the sorting is: </h4> ";
+
+                foreach($this->data as $key => $arr){
+                    foreach($arr as $ind=>$value){
+                        echo $value." ";
+                    }
+                    echo  "<br />\n" ;
+                } ?>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
